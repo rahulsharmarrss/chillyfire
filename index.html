@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title> R_S Restaurant</title>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <style>
+    /* Custom style for the search bar */
+    .search-bar {
+      width: 100%;
+      max-width: 600px; /* Adjust max-width as needed */
+      margin: auto;}
+      body {
+      /* Replace with your image URL */
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      height: 100vh;
+      overflow-y: auto; /* Allow vertical scroll */
+    }
+    .content {
+      padding: 20px;
+    }
+       /* Adjust carousel height if needed */
+    .carousel-item img {
+      width: 400%;
+      height: 800px; /* Adjust height as needed */
+     object-fit:cover;
+    }
+    .carousel-caption {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    
+    .image-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: black;
+      font-size: 20px;
+      text-align: center;
+    }
+    .bg-highlight {
+      background-color: #120e01; /* Change the highlight color as needed */
+    }
+    .custom-border {
+    border: 1px solid #050505;
+  }
+  .pagination-centered {
+      justify-content: center;
+    }
+   </style>
+ </head>
+     <body style="background-image: url('https://popmenucloud.com/cdn-cgi/image/width%3D1536%2Cheight%3D1536%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D60/dpkuqmvw/aae3891e-edec-4b28-a421-1f9ce27035df.jpg');">
+
+      <!-- Navbar -->
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <img src="C:\Users\Rahul Sharma\OneDrive\Desktop\2d8a4411db974662ff4a57bdafa61ab5.jpg"alt="CHILLY FIRE" height="50" width="50">CHILLY FIRE
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          
+     </button>
+    <form action="https://www.google.com/search" method="GET" target="_blank">
+  <div class="input-group">
+    <input type="text" class="form-control" name="q" placeholder="Search food item..." aria-label="Search" aria-describedby="button-addon2">
+    <div class="input-group-append">
+      <button class="btn btn-outline-secondary" type="submit" id="button-addon2"><i class="fas fa-search"></i></button>
+    </div>
+  </div>
+</form>
+  
+     <div class="collapse navbar-collapse" id="navbarNav">
+           <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                 <div class="dropdown">
+                        <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Offer
+                        </button>
+                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                           <a class="dropdown-item" href="">Today's Offer</a>
+                           <a class="dropdown-item" href="#">Special Offer</a>
+                            <a class="dropdown-item" href="#">Coupone Offer</a>
+                      </div>
+                   </div>
+               </li>
+              <li class="nav-item">
+                  <div class="dropdown">
+                      <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" text="text-center">
+                                                             Menu
+                      </button>
+                       <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Dinner</a>
+                           <a class="dropdown-item" href="#">Dessert</a>
+                           <a class="dropdown-item" href="#">LTD Menu</a>
+                           <a class="dropdown-item" href="#">Coocktails</a>
+                           <a class="dropdown-item" href="#">VEG Food</a>
+                           <a class="dropdown-item" href="#">NoN-Veg Food</a>
+                          <a class="dropdown-item" href="#">BEER</a>
+                           <a class="dropdown-item" href="#">Wine</a>
+                      </div>
+                  </div>
+               </li>
+               <li class="nav-item">
+                   <div class="dropdown">
+                       <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         Contacts
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                           <a class="dropdown-item" href="#">For Table Booking</a>
+                           <a class="dropdown-item" href="#">For Order Food</a>
+                          <a class="dropdown-item" href="#">For any Complain</a>
+                          <a class="dropdown-item" href="#">For any Enquery</a>
+                       </div>
+                    </div>
+                </li>
+          </ul>
+     </div>
+  </nav>
+
+  <!-- slid show image-->
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="container mt-5">
+      <!-- Carousel -->
+      <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src=https://popmenucloud.com/cdn-cgi/image/width=1920,height=1920,format=auto,fit=scale-down/dpkuqmvw/92b99552-8cc4-44db-ab2c-60aadf3ea337.jpg class="d-block w-100" height="100px" alt="image">
+            <div class="carousel-caption">
+              <h1>Discover Our Story</h1>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="C:\Users\Rahul Sharma\OneDrive\Desktop\fb80d440-0542-4131-a1d8-6ee60f6821e2.jpg" class="d-block w-100" height="300px" alt="image">
+            <div class="carousel-caption">
+            <h1>CHILLFIRE BAR & GRILL</h1>
+             <h3>REGIONAL FLAVORS | LOCAL TASTE</h3>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="C:\Users\Rahul Sharma\OneDrive\Desktop\imaggggg.webp" class="d-block w-100" height="300px" alt ="image">
+            <div class="carousel-caption">
+              <h1 class="text-black">Chillfire Bar & Grill</h1>
+            </div>
+            
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Content Section -->
+<div class="container mt-6"bg-dark>
+  <div class="row ">
+    <div class="col-md-12">
+      <h1 class="text-light text-center">Discover Our Story</h1>
+      <p class="text-light text-center" >Come enjoy Chillfire's inviting atmosphere and innovative menu. Let us captivate you with flavor and exceptional service.</p>
+    </div>
+   
+  </div>
+</div>
+
+  <div class="card-group ">
+    <div class="card">
+      <img src="C:\Users\Rahul Sharma\OneDrive\Desktop\download (4).jpeg" class="card-img-top" alt="image"class="img-fluid mb-3">
+      <div class="card-body">
+        <h5 class="card-title"></h5>
+        <p class="card-text">
+
+        </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+    <div class="card">
+      <img src="C:\Users\Rahul Sharma\OneDrive\Desktop\close-braised-beef-short-rib-260nw-530248354.webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"></h5>
+        <p class="card-text"></p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+    <div class="card">
+      <img src="C:\Users\Rahul Sharma\OneDrive\Desktop\download (2).jpeg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"></h5>
+        <p class="card-text"></p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container mt-4">
+  <h2 class="text-center mb-4"></h2>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="border p-9 custom-border">
+      <img src="C:\Users\Rahul Sharma\OneDrive\Desktop\download (3).jpeg" alt="Image 1" class="img-fluid mb-3">
+    </div>
+    </div>
+    <div class="col-md-4">
+      <div class="border p-9 custom-border">
+      <img src="C:\Users\Rahul Sharma\OneDrive\Desktop\download.jpeg" alt="Image 2" class="img-fluid mb-3">
+    </div>
+    </div>
+    <div class="col-md-4">
+      <div class="border p-9 custom-border">
+      <img src="C:\Users\Rahul Sharma\OneDrive\Desktop\download (4).jpeg" alt="Image 3" class="img-fluid mb-3">
+    </div>
+    </div>
+  </div>
+    <div class="container mt-4">
+      <h2 class="text-center mb-4"></h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="border p-8 custom-border">
+          <img src="C:\Users\Rahul Sharma\OneDrive\Desktop\dinner.webp" alt="Image 1" class="img-fluid mb-3">
+        </div>
+        </div>
+        <div class="col-md-4">
+          <div class="border p-8 custom-border">
+          <img src="C:\Users\Rahul Sharma\OneDrive\Desktop\download (1).jpeg" alt="Image 2" class="img-fluid mb-3">
+        </div>
+        </div>
+        <div class="col-md-4">
+          <div class="border p-8 custom-border">
+          <img src="C:\Users\Rahul Sharma\OneDrive\Desktop\imaggggg.webp" alt="Image 3" class="img-fluid mb-3">
+        </div>
+        </div>
+                       <div class="container mt-5">
+                           <h2 class="text-light">Restaurant Menu</h2>
+                            <div class="row mt-3">
+                                <!-- Vegetarian Category -->
+                               <div  class="col-md-6">
+                                <div class="card" >
+                                <div class="image-container background-color-dark">
+                                  <img src="C:\Users\Rahul Sharma\OneDrive\Desktop\vegetarian.jpeg" class="card-img-top" alt="Image">
+                                  <div class="image-overlay">
+
+                                  <div class="card-body">                          
+                              
+                                    <span class="bg-highlight text-white">VAGETERIAN</span>
+                              
+                            <div class="form-group">
+                             <div class="form-check">
+                              <input type="checkbox" class="form-check-input" id="vegetarian1">
+                              <label class="text-light form-check-label" for="vegetarian1">Sahi Paneer------$3</label>
+                           </div>
+                             <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="vegetarian2">
+                            <label class="text-light form-check-label" for="vegetarian2">Matar Paneer------$3</label>
+                             </div>
+                         <div class="form-check">
+                         <input type="checkbox" class="form-check-input" id="vegetarian3">
+                              <label class="text-light form-check-label" for="vegetarian3">fried Rice-------$4</label>
+                             </div>
+                              <div class="form-check">
+                                 <input type="checkbox" class="form-check-input" id="vegetarian4">
+                                  <label class="text-light form-check-label" for="vegetarian4">chilly paneer------$5</label>
+                             </div>
+                               <div class="form-check">
+                             <input type="checkbox" class="form-check-input" id="vegetarian5">
+                              <label class="text-light form-check-label" for="vegetarian5">laccha paratha -------$1</label>
+                             </div>
+                  </div>
+              </div>
+           </div>
+      </div>
+    </div>
+  </div>
+         <!-- Non-Vegetarian Category -->
+     <div class="col-md-6">
+      <div class="card">
+        <img src="C:\Users\Rahul Sharma\OneDrive\Desktop\nonveg-1583492545.jpg" class="card-img-top" alt="Image">
+        <div class="image-overlay">
+        <div class="card-body">
+          <span class="bg-highlight text-white">NON-VEGETERIAN</span>
+          <div class="form-group">
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="nonVegetarian1">
+              <label class="text-light form-check-label" for="nonVegetarian1">chicken tandoori------$6</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="nonVegetarian2">
+              <label class="text-light form-check-label" for="nonVegetarian2">handi chicken------$7</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="nonVegetarian3">
+              <label class="text-light form-check-label" for="nonVegetarian3">chickekn lolipop-----$5</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="nonVegetarian4">
+              <label class="text-light form-check-label" for="nonVegetarian4">chichen kabab-----$5</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="nonVegetarian5">
+              <label class="text-light form-check-label" for="nonVegetarian5">chicken chilly-----$4</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+      </div>            
+
+    <div class="row mt-3">
+    <!-- Chinese Category -->
+    <div class="col-md-6">
+      <div class="card">
+        <img src="C:\Users\Rahul Sharma\OneDrive\Desktop\sdghfmhjd,k.jpeg" class="card-img-top" alt="Image">
+        <div class="image-overlay">
+        <div class="card-body">
+          <span class="bg-highlight text-white">CHINESS</span>
+          <div class="form-group">
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="chinese1">
+              <label class="text-light form-check-label" for="chinese1">noodles-----$3</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="chinese2">
+              <label class="text-light form-check-label" for="chinese2">veg manchurian-----$4</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="chinese3">
+              <label class="text-light form-check-label" for="chinese3">spring rolls-----$5</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="chinese4">
+              <label class="text-light form-check-label" for="chinese4">friend and steam dumpling-----$5</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="chinese5">
+              <label class="text-light form-check-label" for="chinese5">dumplings------$6</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Dinner Category -->
+    <div class="col-md-6">
+      <div class="card">
+        <img src="C:\Users\Rahul Sharma\OneDrive\Desktop\zxghjkfg.jpeg" class="card-img-top" alt="Image">
+        <div class="image-overlay">
+        <div class="card-body">
+          <span class="bg-highlight text-white">DINNER</span>
+          <div class="form-group">
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="dinner1">
+              <label class="text-light form-check-label" for="dinner1">veg thaali-----$6</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="dinner2">
+              <label class="text-light form-check-label" for="dinner2">non-veg thaali-----$7</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="dinner3">
+              <label class="text-light form-check-label" for="dinner3">mixed thaali----$6</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="dinner4">
+              <label class="text-light form-check-label" for="dinner4">milk shake-----$2</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="dinner5">
+              <label class="text-light form-check-label" for="dinner5">special thali-----$6</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+      </div>
+      </div>
+      </div>
+        </div>
+      </div><!--container-->
+    </div><!--card body-->
+      </div> 
+    
+      <a href="file:///C:/advanc%20webtech/address.html" class="btn btn-primary">Add Delivery Address</a>
+           
+      <a href="file:///C:/advanc%20webtech/ordersummery.html" class="btn btn-primary">Order Now</a>
+      <div class="container">
+        
+        
+        <!-- Pagination -->
+        <nav aria-label="Page navigation example">
+          <ul class="pagination pagination-centered">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="EgZjaHJvbWUqCQgAEEUYOxjCAzIJCAAQRRg7GMIDMgkIARBFGDsYwgMyCQgCEEUYOxjCAzIJCAMQRRg7GMIDMgkIBBBFGDsYwgMyCQgFEEUYOxjCAzIJCAYQRRg7GMIDMgkIBxBFGDsYwgPSAQs4ODI0OTg1ajBqN6gCCLACAQ">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
+        </nav>
+      </div>
+      
+     
+    <!-- Footer -->
+  <footer class="bg-dark text-light text-center py-3">
+    <p>&copysr; 2024 CHILLY FIRE. Represnted by Rahul Sharma.</p>
+    <p>Chillfire was awarded the 2017 Diners' Choice Award by OpenTable and the 2016 Certificate of Excellence by Tripadvisor!</p>
+    <p class="text-center mt-3">Come enjoy Chillfire's inviting atmosphere and innovative menu. Let us captivate you with flavor and exceptional service.</p>  
+  </footer>
+    <footer class="bg-dark text-light   py-3">
+      <div class="col-12 col-md-12 mb-12">
+      <a  href="https://www.google.com/maps/place/Chillfire+Bar+%26+Grill/@35.4443398,-80.9949743,17z/data=!3m1!4b1!4m6!3m5!1s0x8856b02da6ce6e89:0xb7b52c0a2f833894!8m2!3d35.4443398!4d-80.9949743!16s%2Fg%2F12hm8plk5?entry=ttu">.............location</a> 
+      
+      <p>Chillfire Bar & Grill....</p>
+    <p>121-A Cross Center Road</p>
+    <p>Denver, NC 28037</p>
+<p>(704) 827-2121</p>
+<p>Monday - Thursday:</p>
+<p>4:30 pm - 9:30 pm</p>
+<p>Bar Hours: 4:00 pm - 9:30 pm</p>
+<p>Friday - Saturday:</p>
+<p>4:30 pm - 10:30 pm</p>
+<p>Bar Hours: 4:00 pm - 10:30 pm</p>
+<p>Sunday:</p>
+<p>Closed</p>
+ 
+  </div>
+  </footer>
+ <!-- Bootstrap JS and jQuery -->
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
